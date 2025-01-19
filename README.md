@@ -56,4 +56,55 @@
         		</dependency>
 	    </dependencies>    
 
-        
+<h1>Testing Category Api in Postman</h1>
+
+GET all the categories
+     			   
+	     http://localhost:8080/api/categories?page=3
+
+POST - create a new category
+
+		   	
+	http://localhost:8080/api/categories
+
+
+ GET category by Id
+
+   	
+	http://localhost:8080/api/categories/{di}
+
+ PUT - update category by id
+
+ 	
+	http://localhost:8080/api/categories/{di}
+
+ DELETE - Delete category by id
+
+ 	http://localhost:8080/api/categories/{di}
+
+ <h1>Testing Products Api in Postman</h1>
+
+ GET all the products
+ 			
+    http://localhost:8080/api/products?page=2
+
+POST - create a new product
+
+
+	 http://localhost:8080/api/products
+
+  GET product by Id
+
+
+ 	 http://localhost:8080/api/products/{di}
+
+   PUT - update product by id
+
+
+ 	  http://localhost:8080/api/products/{di}
+
+ DELETE - Delete product by id
+ 		
+
+	http://localhost:8080/api/products/{di}
+         
