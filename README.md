@@ -1,6 +1,6 @@
-# Product-Management-System
+# Product-Management-System follwing steps for setup project 
 
-<h4>follwing steps for setup project </h4>
+
 
 1) Create a Spring Boot Project.
 
@@ -16,7 +16,44 @@
         spring.jpa.hibernate.ddl-auto=update
         spring.jpa.show-sql=true
 
-  # Server Configuration
+   # Server Configuration
         server.port=8080
+
+
+3) Add dependencies
+   #dependencies Configuration
+   
+       <dependencies>
+        		<dependency>
+        			<groupId>org.springframework.boot</groupId>
+        			<artifactId>spring-boot-starter-data-jpa</artifactId>
+        		</dependency>
+        		<dependency>
+        			<groupId>org.springframework.boot</groupId>
+        			<artifactId>spring-boot-starter-web</artifactId>
+        		</dependency>
+        
+        		<dependency>
+        			<groupId>org.springframework.boot</groupId>
+        			<artifactId>spring-boot-devtools</artifactId>
+        			<scope>runtime</scope>
+        			<optional>true</optional>
+        		</dependency>
+        		<dependency>
+        			<groupId>com.mysql</groupId>
+        			<artifactId>mysql-connector-j</artifactId>
+        			<scope>runtime</scope>
+        		</dependency>
+        		<dependency>
+        			<groupId>org.springframework.boot</groupId>
+        			<artifactId>spring-boot-starter-tomcat</artifactId>
+        			<scope>provided</scope>
+        		</dependency>
+        		<dependency>
+        			<groupId>org.springframework.boot</groupId>
+        			<artifactId>spring-boot-starter-test</artifactId>
+        			<scope>test</scope>
+        		</dependency>
+	    </dependencies>    
 
         
