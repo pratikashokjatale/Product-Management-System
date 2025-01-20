@@ -16,27 +16,27 @@ public class ProductController {
     private ProductService productService;
 
     @GetMapping
-    public Page<Product> getAllProducts(Pageable pageable) {
+    public Page<Product> getAllTheProducts(Pageable pageable) {
         return productService.getAllProducts(pageable);
     }
 
     @GetMapping("/{id}")
-    public Product getProductById(@PathVariable Long id) {
+    public Product getProductUsingId(@PathVariable("id") Long id) {
         return productService.getProductById(id);
     }
 
     @PostMapping
-    public Product createProduct(@RequestBody Product product) {
+    public Product createNewProduct(@RequestBody Product product) {
         return productService.createProduct(product);
     }
 
     @PutMapping("/{id}")
-    public Product updateProduct(@PathVariable Long id, @RequestBody Product product) {
+    public Product updateExistingProduct(@PathVariable("id") Long id, @RequestBody Product product) {
         return productService.updateProduct(id, product);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable Long id) {
+    public void deleteExistingProduct(@PathVariable("id") Long id) {
         productService.deleteProduct(id);
     }
 }
