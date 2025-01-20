@@ -107,4 +107,8 @@ POST - create a new product
  		
 
 	http://localhost:8080/api/products/{di}
-         
+
+### Copyright
+2025 <a href="https://pratikjatale.tech/"> Pratik Jatale.</a> All rights reserved.
+
+  
